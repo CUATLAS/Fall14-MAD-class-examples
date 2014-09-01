@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="helloworld2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdl-AN-rAl">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="212" id="mr5-zK-lqI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="mr5-zK-lqI"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="94" y="64" width="212" height="80"/>
+                                    <mask key="constraints">
+                                        <include reference="mr5-zK-lqI"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ey-2K-eb1">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Goodbye">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="227" y="235" width="79" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Uaw-YK-eaY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXB-ie-pYT">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Hello">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="94" y="235" width="79" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ivD-th-xrB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bdl-AN-rAl" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="64" id="3IA-0u-0QX"/>
+                            <constraint firstItem="vXB-ie-pYT" firstAttribute="leading" secondItem="bdl-AN-rAl" secondAttribute="leading" id="9o4-Sh-qRz"/>
+                            <constraint firstItem="vXB-ie-pYT" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="235" id="Kn6-A5-kk1"/>
+                            <constraint firstItem="7ey-2K-eb1" firstAttribute="trailing" secondItem="bdl-AN-rAl" secondAttribute="trailing" id="NNX-14-AMi"/>
+                            <constraint firstItem="7ey-2K-eb1" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="235" id="a76-Bh-peI"/>
+                            <constraint firstAttribute="centerX" secondItem="bdl-AN-rAl" secondAttribute="centerX" id="xsD-zf-cej"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="bdl-AN-rAl"/>
+                                <exclude reference="7ey-2K-eb1"/>
+                                <exclude reference="vXB-ie-pYT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3IA-0u-0QX"/>
+                                <exclude reference="xsD-zf-cej"/>
+                                <exclude reference="9o4-Sh-qRz"/>
+                                <exclude reference="Kn6-A5-kk1"/>
+                                <exclude reference="NNX-14-AMi"/>
+                                <exclude reference="a76-Bh-peI"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="bdl-AN-rAl"/>
+                                <include reference="7ey-2K-eb1"/>
+                                <include reference="vXB-ie-pYT"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3IA-0u-0QX"/>
+                                <include reference="xsD-zf-cej"/>
+                                <include reference="9o4-Sh-qRz"/>
+                                <include reference="Kn6-A5-kk1"/>
+                                <include reference="NNX-14-AMi"/>
+                                <include reference="a76-Bh-peI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="messageText" destination="bdl-AN-rAl" id="nbP-BS-ZML"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="380"/>
+        </scene>
+    </scenes>
+</document>
