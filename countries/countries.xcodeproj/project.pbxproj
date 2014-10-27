@@ -15,7 +15,9 @@
 		75275C7C19F5B04C00F93A62 /* countriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75275C7B19F5B04C00F93A62 /* countriesTests.swift */; };
 		75275C8619F5B47800F93A62 /* continents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75275C8519F5B47800F93A62 /* continents.plist */; };
 		75275C8819F5BC5600F93A62 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75275C8719F5BC5600F93A62 /* DetailViewController.swift */; };
+		754E16F619FB11A300309CDA /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754E16F519FB11A300309CDA /* CountryViewController.swift */; };
 		75B4B94419F71AF0003F12E5 /* Continents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B4B94319F71AF0003F12E5 /* Continents.swift */; };
+		75E3F09719FDC1C500988664 /* ContinentInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E3F09619FDC1C500988664 /* ContinentInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,9 @@
 		75275C7B19F5B04C00F93A62 /* countriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countriesTests.swift; sourceTree = "<group>"; };
 		75275C8519F5B47800F93A62 /* continents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = continents.plist; sourceTree = "<group>"; };
 		75275C8719F5BC5600F93A62 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		754E16F519FB11A300309CDA /* CountryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		75B4B94319F71AF0003F12E5 /* Continents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Continents.swift; sourceTree = "<group>"; };
+		75E3F09619FDC1C500988664 /* ContinentInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinentInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 				75B4B94319F71AF0003F12E5 /* Continents.swift */,
 				75275C6719F5B04C00F93A62 /* ViewController.swift */,
 				75275C8719F5BC5600F93A62 /* DetailViewController.swift */,
+				754E16F519FB11A300309CDA /* CountryViewController.swift */,
+				75E3F09619FDC1C500988664 /* ContinentInfoViewController.swift */,
 				75275C6919F5B04C00F93A62 /* Main.storyboard */,
 				75275C6C19F5B04C00F93A62 /* Images.xcassets */,
 				75275C6E19F5B04C00F93A62 /* LaunchScreen.xib */,
@@ -225,6 +231,8 @@
 				75B4B94419F71AF0003F12E5 /* Continents.swift in Sources */,
 				75275C8819F5BC5600F93A62 /* DetailViewController.swift in Sources */,
 				75275C6819F5B04C00F93A62 /* ViewController.swift in Sources */,
+				75E3F09719FDC1C500988664 /* ContinentInfoViewController.swift in Sources */,
+				754E16F619FB11A300309CDA /* CountryViewController.swift in Sources */,
 				75275C6619F5B04C00F93A62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

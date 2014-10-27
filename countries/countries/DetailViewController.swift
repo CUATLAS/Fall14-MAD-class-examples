@@ -27,7 +27,7 @@ class DetailViewController: UITableViewController, UITableViewDataSource, UITabl
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -97,6 +97,18 @@ class DetailViewController: UITableViewController, UITableViewDataSource, UITabl
         return true
     }
 
+    @IBAction func unwindSegue (segue:UIStoryboardSegue){
+        if segue.identifier=="doneSegue"{
+            let source = segue.sourceViewController as CountryViewController
+            if !source.addedCountry.isEmpty{
+                countries.append(source.addedCountry)
+                tableView.reloadData()
+                //adds the new country to the data model
+                let chosenContinent = continentCountries.continents[selectedContinent]
+                continentCountries.continentData[chosenContinent]?.addObject(source.addedCountry)
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation
