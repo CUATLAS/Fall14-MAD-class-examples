@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="media" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e11-p9-vbg">
+                                <rect key="frame" x="0.0" y="548" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="g1h-4u-krR">
+                                        <connections>
+                                            <action selector="cameraButtonTapped:" destination="vXZ-lx-hvc" id="UHX-Wz-QKc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0vi-dk-bxT"/>
+                                    <barButtonItem systemItem="action" id="IRY-G3-cCw">
+                                        <connections>
+                                            <action selector="actionButonTapped:" destination="vXZ-lx-hvc" id="fAO-Nx-PtZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="agY-Uk-wU3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="548"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="agY-Uk-wU3" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="3Dz-bV-mIk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e11-p9-vbg" secondAttribute="trailing" constant="-16" id="DcX-eZ-6OQ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="e11-p9-vbg" secondAttribute="bottom" constant="8" id="J4L-5Q-XDY"/>
+                            <constraint firstItem="agY-Uk-wU3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="MtO-SP-3zs"/>
+                            <constraint firstItem="e11-p9-vbg" firstAttribute="top" secondItem="agY-Uk-wU3" secondAttribute="bottom" id="QbI-Aa-TDy"/>
+                            <constraint firstItem="e11-p9-vbg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="agY-Uk-wU3" secondAttribute="bottom" id="Sg7-oV-Ke9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="agY-Uk-wU3" secondAttribute="trailing" constant="-16" id="eE1-7s-3Os"/>
+                            <constraint firstItem="e11-p9-vbg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="q6H-ra-UiA"/>
+                            <constraint firstItem="agY-Uk-wU3" firstAttribute="bottom" secondItem="e11-p9-vbg" secondAttribute="top" id="roE-rf-0pf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="QbI-Aa-TDy"/>
+                                <exclude reference="Sg7-oV-Ke9"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="agY-Uk-wU3" id="I8v-rb-MEo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
